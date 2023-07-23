@@ -1,0 +1,16 @@
+.hero {
+  &__container {
+    @include mobile {
+      position: relative;
+      // background: url(../images/offers/decore2.svg) no-repeat 113% 90%;
+    }
+    @include desktop {
+      @include grid;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+
+}
+

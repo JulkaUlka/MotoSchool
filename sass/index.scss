@@ -1,0 +1,22 @@
+//utils styles
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+//base styles
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+
+//components styles
+@import './components/modal';
+@import './components/header';
+@import './components/hero';
+@import './components/services';
+@import './components/study';
+@import './components/offer';
+@import './components/bike';
+@import './components/video';
+@import './components/box';
+@import './components/subscribtion';
+@import './components/footer';

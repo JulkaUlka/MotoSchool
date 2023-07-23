@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RS Moto School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="" class="logo">
+          <img src="./images/logo.png" alt="RS Moto School logo" />
+        </a>
+        <ul class="header__buttons">
+          <li class="header__item">
+            <button class="header__btn">
+              <svg width="20" height="19">
+                <use href="./images/icons.svg#icon-Icon_Insta"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item">
+            <button class="header__btn">
+              <svg width="20" height="13">
+                <use href="./images/icons.svg#icon-Icon_Youtube"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            <span class="hero__title hero__title_accent">ПЕРША ПРЕМІАЛЬНА</span
+            ><br />МОТОШКОЛА УКРАЇНИ
+          </h1>
+          <p class="text hero__text">
+            Ексклюзивна колаборація від легендарних <br />
+            Harley Davidson та мотошколи RSMOTO.
+          </p>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <button
+                class="button"
+                type="button"
+                data-modal-target="#popup2"
+                data-modal-open
+              >
+                залишити заявку
+              </button>
+            </li>
+            <li class="hero__item">
+              <button
+                class="button hero__btn"
+                type="button"
+                data-modal-target="#popup1"
+                data-modal-open
+              >
+                У мене є сертифікат
+              </button>
+            </li>
+          </ul>
+          <img src="./images/main_img.png" alt="Harley Davidson Bike" />
+        </div>
+      </section>
+      <section class="section services">
+        <div class="container services__container">
+          <h2 class="title">
+            НОВИЙ РІВЕНЬ навчання,<br />сервісу та результатів.
+          </h2>
+          <p class="text services__text">
+            Мотошкола класу PREMIUM для справжніх поціновувачів високоякісного
+            сервісу, індивідуального підходу та легендарних мотоциклів Harley
+            Davidson.
+          </p>
+          <ul class="services__icon-list">
+            <li class="services__icon-item">
+              <svg width="42" height="46">
+                <use href="./images/icons.svg#icon-icon1"></use>
+              </svg>
+              <p class="text services__text">
+                Заняття проходять на просторій та зручній локації біля стадіону
+                НСК Олімпійський
+              </p>
+            </li>
+            <li class="services__icon-item">
+              <svg width="42" height="46">
+                <use href="./images/icons.svg#icon-icon2"></use>
+              </svg>
+              <p class="text services__text">
+                Тренує особисто власник школи RSMOTO та багаторазовий чемпіон
+                України з мотоперегонів Олександр Георгіца.
+              </p>
+            </li>
+            <li class="services__icon-item">
+              <svg width="113" height="46">
+                <use href="./images/icons.svg#icon-icon3"></use>
+              </svg>
+              <p class="text services__text">
+                Навчальний мотоцикл - новий Harley Davidson Sportster S
+              </p>
+            </li>
+            <li class="services__icon-item">
+              <svg width="57" height="60">
+                <use href="./images/icons.svg#icon-icon4"></use>
+              </svg>
+              <p class="text services__text">
+                Нове та якісне екіпірування від імених брендів (Alpinestrs,
+                Dainese, Shoei, AGV та Harley Davidson)
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section study">
+        <div class="container study__container">
+          <div class="study__wrap">
+            <h2 class="title study__title"></h2>
+            <p class="text study__text">
+              За гроші можна купити майже все, але досвід – бесцінний.
+            </p>
+            <p class="text study__text">
+              Олександр Георгіца - власник мотошколи RSMOTO та багаторазовий
+              чемпіон України з мотоперегонів. Має більше 15 років в управлінні
+              мотоциклом, яким він ділиться зі своїми учнями.
+            </p>
+          </div>
+          <img
+            src="./images/study_img.png"
+            alt="man on a bike"
+            class="study__img"
+          />
+        </div>
+      </section>
+      <section class="section offer">
+        <div class="container offer__container">
+          <h2 class="title offer__title">Бажаеш опанувати байк?</h2>
+          <p class="text offer__text">
+            Залишай заявку та наш менеджер зв’яжеться з тобою найближчим часом
+          </p>
+          <form class="form offer__form" name="subscrible_form">
+            <div class="form__wrap">
+              <input type="text" class="form__input" placeholder="Ім'я" />
+              <input type="number" class="form__input" placeholder="Телефон" />
+              <input type="email" class="form__input" placeholder="E-mail" />
+            </div>
+            <button type="submit" class="button offer__btn">
+              залишити заявку
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="section bike">
+        <div class="container bike__container">
+          <h2 class="title bike__title">
+            Байк Harley Davidson<br />sportster 1200
+          </h2>
+          <p class="text bike__text">
+            Швидкий та потужний представник двохколісних –
+            <span class="bike__text bike__text_accent"
+              >Harley Davidson Sportster 1200.</span
+            >
+          </p>
+          <p class="text bike__text">
+            Байк, що чудово підходить для навчання та дозволяє отмати максимум
+            задоволення від керування.
+          </p>
+          <img
+            src="./images/harley.png"
+            alt="Harley Davidson Sportster 1200"
+            class="bike__img"
+          />
+        </div>
+      </section>
+      <section class="section video">
+        <div class="container video__container">
+          <h2 class="title video__title">
+            БІЛЬШЕ ПРО PREMIUM НАВЧАННЯ<br />У ВІДЕО:
+          </h2>
+          <div class="video__video">
+            <img
+              src="./images/video.png"
+              alt="man with bikes"
+              class="video__img"
+            />
+            <svg width="102" height="89">
+              <use href="./images/icons.svg#icon-Icon_Play"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="section box">
+        <div class="box__container">
+          <div class="box__wrap">
+            <h2 class="title box__title">ПОДАРУНКИ,<br />ЯКІ ВРАЖАЮТЬ</h2>
+            <p class="text box__text">
+              Не знаєте що подарувати людині, у якої все є?  Даруйте сертифікат
+              на навчання у PREMIUM школі RSMOTO School & Harley Davidson.
+            </p>
+            <button
+              class="button"
+              type="button"
+              data-modal-target="#popup3"
+              data-modal-open
+            >
+              Замовити сертифікат
+            </button>
+          </div>
+          <img src="./images/box.png" alt="two boxes" class="box__img" />
+        </div>
+      </section>
+      <section class="section subscribtion">
+        <div class="container subscribtion__container">
+          <h2 class="title subscribtion__title">ЗАЦІКАВИВ КУРС?</h2>
+          <p class="text subscribtion__text">
+            Залишай заявку та наш менеджер зв’яжеться з тобою найближчим часом
+          </p>
+          <form class="form subscribtion__form" name="subscrible_form">
+            <div class="form__wrap">
+              <input type="text" class="form__input" placeholder="Ім'я" />
+              <input type="number" class="form__input" placeholder="Телефон" />
+              <input type="email" class="form__input" placeholder="E-mail" />
+            </div>
+            <button type="submit" class="button offer__btn">
+              залишити заявку
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <div id="popup1" class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>X</button>
+        <h2 class="title">МАЄШ СЕРТИФІКАТ?</h2>
+        <p class="text">
+          Залишай свої контактні дані та наш менеджер зв’яжеться з тобою
+          найближчим часом
+        </p>
+        <form class="form" name="subscrible_form">
+          <div class="form__wrap">
+            <input type="text" class="form__input" placeholder="Ім'я" />
+            <input type="number" class="form__input" placeholder="Телефон" />
+            <input type="email" class="form__input" placeholder="E-mail" />
+          </div>
+          <button type="submit" class="button">залишити заявку</button>
+        </form>
+      </div>
+    </div>
+    <div id="popup2" class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>X</button>
+        <h2 class="title">ЗАЦІКАВИВ КУРС?</h2>
+        <p class="text">
+          Залишай заявку та наш менеджер зв’яжеться з тобою найближчим часом
+        </p>
+        <form class="form" name="subscrible_form">
+          <div class="form__wrap">
+            <input type="text" class="form__input" placeholder="Ім'я" />
+            <input type="number" class="form__input" placeholder="Телефон" />
+            <input type="email" class="form__input" placeholder="E-mail" />
+          </div>
+          <button type="submit" class="button">залишити заявку</button>
+        </form>
+      </div>
+    </div>
+    <div id="popup3" class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>X</button>
+        <h2 class="title">ЗАМОВИТИ СЕРТИФІКАТ</h2>
+        <p class="text">
+          Залишай заявку та наш менеджер зв’яжеться з тобою найближчим часом
+        </p>
+        <form class="form" name="subscrible_form">
+          <div class="form__wrap">
+            <input type="text" class="form__input" placeholder="Ім'я" />
+            <input type="number" class="form__input" placeholder="Телефон" />
+            <input type="email" class="form__input" placeholder="E-mail" />
+          </div>
+          <button type="submit" class="button">залишити заявку</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

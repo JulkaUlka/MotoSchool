@@ -1,0 +1,28 @@
+@mixin transition($params...) {
+  transition-property: $params;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1980px) {
+    @content;
+  }
+}
+
+@mixin grid {
+  display: flex;
+  flex-wrap: wrap;
+}
