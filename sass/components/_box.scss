@@ -1,0 +1,36 @@
+.box {
+ 
+  background-color: $bgColorSecondary;
+  &__container {
+    @include grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    @include tablet {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+  &__wrap {
+    @include grid;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    position: relative;
+    text-align: start;
+    margin-bottom: 35px;
+    &::after {
+      @include content;
+      left: 0;
+    }
+  }
+
+  &__img {
+    max-width: 50%;
+  }
+}

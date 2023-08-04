@@ -1,0 +1,33 @@
+.bike {
+  
+  &__container {
+    @include grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 35px;
+    &::after {
+      @include content;
+      left: 44%;
+    }
+  }
+  &__text {
+    text-align: center;
+    width: 60%;
+    &_accent {
+      font-weight: 700;
+    }
+  }
+  &__img-block {
+    position: relative;
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+  }
+}

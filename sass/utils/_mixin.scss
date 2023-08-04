@@ -17,7 +17,7 @@
 }
 
 @mixin desktop {
-  @media screen and (min-width: 1980px) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }
@@ -25,4 +25,14 @@
 @mixin grid {
   display: flex;
   flex-wrap: wrap;
+}
+
+@mixin content {
+  background-color: $accentColor;
+  bottom: -30px;
+  content: " ";
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  width: 5rem;
 }

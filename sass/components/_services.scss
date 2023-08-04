@@ -1,0 +1,51 @@
+.services {
+  background-color: $bgColorSecondary;
+
+  &__container {
+    @include grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+  &__title {
+    position: relative;
+    &::after {
+      @include content;
+      left: 44%;
+    }
+  }
+
+  &__text {
+    width: 90%;
+    text-align: center;
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &__list {
+    @include grid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @include tablet {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+  &__item {
+    @include grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 90%;
+    @include tablet {
+      max-width: 20%;
+      justify-content: flex-start;
+      align-items: start;
+    }
+  }
+}

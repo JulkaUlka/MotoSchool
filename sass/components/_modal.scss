@@ -1,78 +1,69 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-  
-    @include transition(opacity, visibility);
-  
-    &.is-hidden {
-      visibility: hidden;
-      opacity: 0;
-      pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  @include transition(opacity, visibility);
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  overflow: auto;
+  z-index: 2;
+  min-width: 90%;
+  min-height: 597px;
+  background: $bgColorSecondary;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  @include transition(transform);
+
+  @include desktop {
+    min-height: 581px;
+  }
+  &__title {
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      @include content;
+      left: 47%;
     }
   }
-  
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 20px;
-    overflow: auto;
-  
-    min-width: 300px;
-    min-height: 597px;
-    background: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  
-    transform: translate(-50%, -50%);
-    @include transition(transform);
-  
-    @include mobile {
-      min-width: 450px;
-      min-height: 609px;
-      padding: 40px;
-    }
-    @include desktop {
-      min-width: 528px;
-      min-height: 581px;
-    }
+  &__text {
+    text-align: center;
+    margin-bottom: 60px;
   }
-  
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -70%);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -70%);
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+  color: $mainColor;
+  background-color: transparent;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
   }
-  
-  .close-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 8px;
-    
-    color: #ffffff;
-  
-    @include transition(сщдщк);
-  
-    &:hover,
-    &:focus {
-      color:$accentColor;
-    }
-  }
-  
- 
-  
-  
-  
-  
-  
-  
- 
- 
+}

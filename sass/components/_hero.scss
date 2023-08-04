@@ -1,16 +1,70 @@
 .hero {
   &__container {
-    @include mobile {
-      position: relative;
-      // background: url(../images/offers/decore2.svg) no-repeat 113% 90%;
+    @include grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 13vw;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.05rem;
+    text-transform: uppercase;
+    opacity: 0.08;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 88.02%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include tablet {
+      letter-spacing: -1.05rem;
     }
     @include desktop {
-      @include grid;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: nowrap;
+      font-size: 12vw;
     }
   }
+  &__title {
+    color: $titleColor;
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: normal;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: -10vw;
 
+    &_accent {
+      font-size: 4.375vw;
+      font-weight: 800;
+      letter-spacing: 0.175rem;
+    }
+  }
+  &__text {
+    text-align: center;
+  }
+  &__list {
+    width: 100%;
+    @include grid;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 1;
+  }
+  &__btn {
+    background-color: transparent;
+    border: 1px solid $titleColor;
+
+    @include transition(background-color, border);
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+      border: 1px solid $accentColor;
+    }
+  }
+  &__img-block {
+    transform: translateY(-7vw);
+  }
 }
-

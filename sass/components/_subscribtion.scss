@@ -1,0 +1,14 @@
+.subscribtion {
+  &__title {
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      @include content;
+      left: 47%;
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}

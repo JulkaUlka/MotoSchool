@@ -11,28 +11,47 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/index.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <a href="" class="logo">
           <img src="./images/logo.png" alt="RS Moto School logo" />
         </a>
         <ul class="header__buttons">
           <li class="header__item">
-            <button class="header__btn">
-              <svg width="20" height="19">
+            <a
+              class="header__btn"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener
+          noreferrer"
+            >
+              <svg class="header__icon" width="20" height="19">
                 <use href="./images/icons.svg#icon-Icon_Insta"></use>
               </svg>
-            </button>
+            </a>
           </li>
           <li class="header__item">
-            <button class="header__btn">
-              <svg width="20" height="13">
+            <a
+              class="header__btn"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener
+          noreferrer"
+            >
+              <svg class="header__icon" width="20" height="13">
                 <use href="./images/icons.svg#icon-Icon_Youtube"></use>
               </svg>
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -40,6 +59,7 @@
     <main>
       <section class="section hero">
         <div class="container hero__container">
+          <h2 class="hero__subtitle">МОТОШКОЛА</h2>
           <h1 class="hero__title">
             <span class="hero__title hero__title_accent">ПЕРША ПРЕМІАЛЬНА</span
             ><br />МОТОШКОЛА УКРАЇНИ
@@ -70,12 +90,19 @@
               </button>
             </li>
           </ul>
-          <img src="./images/main_img.png" alt="Harley Davidson Bike" />
+          <div class="hero__img-block">
+            <img
+              src="./images/harley.png"
+              alt="Harley Davidson Sportster 1200"
+              class="hero__img"
+            />
+            <div class="overlay"></div>
+          </div>
         </div>
       </section>
       <section class="section services">
         <div class="container services__container">
-          <h2 class="title">
+          <h2 class="title services__title">
             НОВИЙ РІВЕНЬ навчання,<br />сервісу та результатів.
           </h2>
           <p class="text services__text">
@@ -83,38 +110,38 @@
             сервісу, індивідуального підходу та легендарних мотоциклів Harley
             Davidson.
           </p>
-          <ul class="services__icon-list">
-            <li class="services__icon-item">
+          <ul class="services__list">
+            <li class="services__item">
               <svg width="42" height="46">
                 <use href="./images/icons.svg#icon-icon1"></use>
               </svg>
-              <p class="text services__text">
+              <p class="text services__content">
                 Заняття проходять на просторій та зручній локації біля стадіону
                 НСК Олімпійський
               </p>
             </li>
-            <li class="services__icon-item">
-              <svg width="42" height="46">
+            <li class="services__item">
+              <svg width="42" height="49">
                 <use href="./images/icons.svg#icon-icon2"></use>
               </svg>
-              <p class="text services__text">
+              <p class="text services__content">
                 Тренує особисто власник школи RSMOTO та багаторазовий чемпіон
                 України з мотоперегонів Олександр Георгіца.
               </p>
             </li>
-            <li class="services__icon-item">
+            <li class="services__item">
               <svg width="113" height="46">
                 <use href="./images/icons.svg#icon-icon3"></use>
               </svg>
-              <p class="text services__text">
+              <p class="text services__content">
                 Навчальний мотоцикл - новий Harley Davidson Sportster S
               </p>
             </li>
-            <li class="services__icon-item">
+            <li class="services__item">
               <svg width="57" height="60">
                 <use href="./images/icons.svg#icon-icon4"></use>
               </svg>
-              <p class="text services__text">
+              <p class="text services__content">
                 Нове та якісне екіпірування від імених брендів (Alpinestrs,
                 Dainese, Shoei, AGV та Harley Davidson)
               </p>
@@ -125,7 +152,9 @@
       <section class="section study">
         <div class="container study__container">
           <div class="study__wrap">
-            <h2 class="title study__title"></h2>
+            <h2 class="title study__title">
+              професійний підхід до навчання від Олександра Георгіци
+            </h2>
             <p class="text study__text">
               За гроші можна купити майже все, але досвід – бесцінний.
             </p>
@@ -135,11 +164,15 @@
               мотоциклом, яким він ділиться зі своїми учнями.
             </p>
           </div>
-          <img
-            src="./images/study_img.png"
-            alt="man on a bike"
-            class="study__img"
-          />
+          <div class="study__img-block">
+            <img
+              src="./images/study_img.png"
+              alt="man on a bike"
+              class="study__img"
+            />
+            <div class="shadow"></div>
+            <div class="overlay"></div>
+          </div>
         </div>
       </section>
       <section class="section offer">
@@ -175,11 +208,14 @@
             Байк, що чудово підходить для навчання та дозволяє отмати максимум
             задоволення від керування.
           </p>
-          <img
-            src="./images/harley.png"
-            alt="Harley Davidson Sportster 1200"
-            class="bike__img"
-          />
+          <div class="bike__img-block">
+            <img
+              src="./images/harley.png"
+              alt="Harley Davidson Sportster 1200"
+              class="bike__img"
+            />
+            <div class="shadow"></div>
+          </div>
         </div>
       </section>
       <section class="section video">
@@ -193,7 +229,7 @@
               alt="man with bikes"
               class="video__img"
             />
-            <svg width="102" height="89">
+            <svg width="102" height="89" class="video__icon">
               <use href="./images/icons.svg#icon-Icon_Play"></use>
             </svg>
           </div>
@@ -204,8 +240,9 @@
           <div class="box__wrap">
             <h2 class="title box__title">ПОДАРУНКИ,<br />ЯКІ ВРАЖАЮТЬ</h2>
             <p class="text box__text">
-              Не знаєте що подарувати людині, у якої все є?  Даруйте сертифікат
-              на навчання у PREMIUM школі RSMOTO School & Harley Davidson.
+              Не знаєте що подарувати людині, у якої все є? <br />Даруйте
+              сертифікат на навчання у PREMIUM школі<br />RSMOTO School & Harley
+              Davidson.
             </p>
             <button
               class="button"
@@ -242,8 +279,8 @@
     <div id="popup1" class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" data-modal-close>X</button>
-        <h2 class="title">МАЄШ СЕРТИФІКАТ?</h2>
-        <p class="text">
+        <h2 class="modal__title title">МАЄШ СЕРТИФІКАТ?</h2>
+        <p class="modal__text text">
           Залишай свої контактні дані та наш менеджер зв’яжеться з тобою
           найближчим часом
         </p>
@@ -260,8 +297,8 @@
     <div id="popup2" class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" data-modal-close>X</button>
-        <h2 class="title">ЗАЦІКАВИВ КУРС?</h2>
-        <p class="text">
+        <h2 class="modal__title title">ЗАЦІКАВИВ КУРС?</h2>
+        <p class="modal__text text">
           Залишай заявку та наш менеджер зв’яжеться з тобою найближчим часом
         </p>
         <form class="form" name="subscrible_form">
@@ -277,8 +314,8 @@
     <div id="popup3" class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" data-modal-close>X</button>
-        <h2 class="title">ЗАМОВИТИ СЕРТИФІКАТ</h2>
-        <p class="text">
+        <h2 class="modal__title title">ЗАМОВИТИ СЕРТИФІКАТ</h2>
+        <p class="modal__text text">
           Залишай заявку та наш менеджер зв’яжеться з тобою найближчим часом
         </p>
         <form class="form" name="subscrible_form">

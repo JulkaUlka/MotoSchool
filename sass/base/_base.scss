@@ -2,46 +2,117 @@ body {
   background-color: $bgColor;
   font-family: $main_font;
   color: $mainColor;
-  // @include desktop {
-  //   background: url(../images/header/decore1.png) no-repeat top right;
-  // }
 }
 
 .section {
-  padding-top: 70px;
-
+  padding-top: 50px;
+  padding-bottom: 50px;
   @include desktop {
-    padding-top: 94px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
-.subtitle {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  text-transform: capitalize;
-
-  @include desktop {
-    font-size: 18px;
-  }
-}
 .title {
- 
+  font-size: 4vw;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.3;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: $titleColor;
   text-align: center;
-  text-transform: capitalize;
-  
-
-  @include desktop {
-    font-size: 50px;
+  @include tablet {
+    font-size: 2.5rem;
   }
 }
 
 .text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+.button {
+  padding: 10px 15px;
+  background-color: $accentColor;
+  border-radius: 0.75rem;
+  border: 1px solid $accentColor;
+  font-size: 0.5rem;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
+  line-height: normal;
+  text-transform: uppercase;
+  color: $titleColor;
+  @include transition(background-color, border);
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid $titleColor;
+  }
+  @include tablet {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  @include desktop {
+    padding: 1.3125rem 2.4375rem;
+  }
+}
+.form {
+  @include grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+
+  &__wrap {
+    @include grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #41454e;
+    border-radius: 0.0625rem;
+    color: $titleColor;
+    padding: 4px;
+    width: 70%;
+    &::placeholder {
+      color: $titleColor;
+    }
+
+    @include tablet {
+      width: 30%;
+    }
+  }
+}
+.overlay {
+  background: linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, #202020 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.shadow {
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: #eb601d;
+  filter: blur(4vw);
+  z-index: 0;
 }

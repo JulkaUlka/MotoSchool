@@ -1,0 +1,32 @@
+.video {
+  &__title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    &::after {
+      @include content;
+      left: 44%;
+    }
+  }
+
+  &__video {
+    position: relative;
+  }
+  &__img {
+    border-radius: 1.25rem;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    stroke: $titleColor;
+    @include transition(stroke);
+
+    &:hover,
+    &:focus {
+      stroke: $accentColor;
+    }
+  }
+}

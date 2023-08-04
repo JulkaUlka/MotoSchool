@@ -1,0 +1,40 @@
+.header {
+  &__container {
+    @include grid;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  &__buttons {
+    @include grid;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    @include tablet {
+      gap: 20px;
+    }
+    @include desktop {
+      gap: 30px;
+    }
+  }
+  &__icon {
+    background-color: transparent;
+    stroke: $mainColor;
+    fill: $mainColor;
+    @include transition(stroke, fill);
+    &:hover,
+    &:focus {
+      stroke: $accentColor;
+      fill: $accentColor;
+    }
+  }
+}
+.logo {
+  @include mobile {
+    max-width: 60%;
+  }
+}

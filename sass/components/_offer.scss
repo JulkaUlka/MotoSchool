@@ -1,0 +1,22 @@
+.offer {
+  background: url(../images/bg_img.png) lightgray 50% / cover no-repeat;
+
+  &__container {
+    @include grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      @include content;
+      left: 44%;
+    }
+  }
+  &__text {
+    margin-bottom: 70px;
+  }
+}

@@ -1,0 +1,39 @@
+.study {
+  &__container {
+    @include grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+  &__wrap {
+    @include grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    @include tablet {
+      width: 50%;
+    }
+  }
+  &__title {
+    position: relative;
+    text-align: start;
+    margin-bottom: 35px;
+    &::after {
+      @include content;
+      left: 0;
+    }
+  }
+  &__img-block {
+    position: relative;
+    max-width: 50%;
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+  }
+}
